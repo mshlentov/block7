@@ -1,0 +1,20 @@
+$lightGreen-color: #D9FFF5;
+$emerald-color: #41F6D7;
+$pink-color: #FF3E79;
+
+body {
+    background: #F8F8F8;
+}
+
+@import 'normalize.scss';
+@import '../fonts/fonts.css';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import 'header.scss';
+@import 'services.scss';
+@import 'brands.scss';
+@import 'gadgets.scss';
+@import 'price.scss';
+@import 'menu.scss';
+@import 'footer.scss';
+@import 'modalCall.scss';
+@import 'modalFeedback.scss';
