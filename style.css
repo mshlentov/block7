@@ -1868,7 +1868,8 @@ template {
   background: none;
   border: none;
   padding: 0 16px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  cursor: pointer; }
   .description__readmore::after {
     content: 'Читать далее'; }
   @media (min-width: 768px) {
