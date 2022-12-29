@@ -7,7 +7,10 @@
     background: #fff;
     top: 0;
     z-index: 100;
-    overflow: scroll;
+
+    @media (max-height: 650px) {
+        overflow: scroll;
+    }
 
     &--hidden {
         transform: translateX(-320px);
