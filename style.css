@@ -1981,24 +1981,18 @@ template {
     .item__link {
       width: 240px; } }
 
-.item__buttonIcon {
+.brands__item::after {
+  content: '';
+  padding: 3px;
   width: 40px;
   height: 40px;
   border: 2px solid #FF3E79;
   border-radius: 50%;
   background: #fff;
-  cursor: pointer; }
-
-.item__buttonIcon:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(315deg);
-  right: 33px;
-  border-width: 0 2px 2px 0;
-  border-style: solid;
-  border-color: #FF3E79;
-  padding: 3px; }
+  cursor: pointer;
+  background: url(./static/dropdown-pink.svg);
+  background-repeat: no-repeat;
+  background-position: 55%; }
 
 /* Variant 2
 .item__buttonIcon:after {
@@ -2341,7 +2335,33 @@ template {
     font-family: 'TT Lakes';
     font-size: 14px;
     line-height: 18px;
-    color: #1B1C21; }
+    color: #1B1C21;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding: 20px 16px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA; }
+    @media (min-width: 768px) {
+      .price .item__link {
+        height: 64px;
+        border: none;
+        background: none;
+        justify-content: flex-start; }
+        .price .item__link::after {
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: #EAEAEA;
+          margin-top: 16px; } }
+    @media (min-width: 1440px) {
+      .price .item__link {
+        padding-left: 0;
+        padding-right: 0; } }
     .price .item__link .item__category {
       color: #7E7E82; }
       @media (min-width: 768px) {
@@ -2492,7 +2512,8 @@ template {
   position: fixed;
   background: #fff;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  overflow: scroll; }
   .menu--hidden {
     transform: translateX(-320px);
     transition: 2s; }
