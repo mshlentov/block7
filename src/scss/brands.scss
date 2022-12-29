@@ -97,25 +97,21 @@
     }
 }
 
-.item__buttonIcon {
+
+
+.brands__item::after {
+    content: '';
+    
+    padding: 3px;
     width: 40px;
     height: 40px;
     border: 2px solid $pink-color;
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
-}
-
-.item__buttonIcon:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(315deg);
-    right: 33px;
-    border-width: 0 2px 2px 0;
-    border-style: solid;
-    border-color: $pink-color;
-    padding: 3px;
+    background: url('../img/dropdown-pink.svg');
+    background-repeat: no-repeat;
+    background-position: 55%;
 }
 
 /* Variant 2
