@@ -2512,8 +2512,10 @@ template {
   position: fixed;
   background: #fff;
   top: 0;
-  z-index: 100;
-  overflow: scroll; }
+  z-index: 100; }
+  @media (max-height: 650px) {
+    .menu {
+      overflow: scroll; } }
   .menu--hidden {
     transform: translateX(-320px);
     transition: 2s; }
